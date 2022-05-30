@@ -283,3 +283,39 @@ section {
 }
 
 @media screen and (min-width:1200px) {}
+
+
+/* BENEFITS SECTION */
+.benefits {
+    background-color: var(--planning-sec-bg);
+    text-align: center;
+}
+
+.benefit-card {
+    min-height: 200px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+/* BENEFIT SECTION RESPONSIVNESS */
+
+
+@media screen and (min-width:768px) {
+
+
+    .benefits .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .benefits .col {
+        width: calc(100%/2);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .benefits .col {
+        width: calc(100%/3);
+    }
+}
