@@ -9,9 +9,15 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+main {
+    padding-top: 150px;
+
+}
+
 /* color */
 :root {
     --header-bg: #0084fd;
+    --card-blue: #b5ddff;
 
 }
 
@@ -20,10 +26,24 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 15px;
+
 }
 
 .debug .border {
     border: 1px solid greenyellow;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.col {
+    /* TOGLIMI? */
+    min-height: 300px;
+    padding: 15px;
 }
 
 
@@ -49,14 +69,17 @@ header {
 
 .fixed-bar figure {
     height: 100%;
-    background-color: red;
-    width: 100px;
     /*TOGLIMI */
+    background-color: red;
+    /*TOGLIMI */
+    width: 100px;
 }
 
 .full-menu {
     display: none;
 }
+
+/* HEADER RESPONSIVENESS */
 
 @media screen and (min-width: 1200px) {
     .fixed-bar {
@@ -69,5 +92,76 @@ header {
 
     .full-menu {
         display: flex;
+    }
+}
+
+
+/* MAIN */
+
+
+.card {
+    height: 100%;
+    padding: 30px;
+}
+
+
+
+/* INFORMATIVE-SECTION */
+.informative-section .card {
+    background-color: var(--card-blue);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.informative-section .demo-app {
+    text-align: start;
+
+}
+
+.card-txt {
+    /* eliminami */
+    min-height: 100px;
+    background-color: aquamarine;
+}
+
+.demo-app {
+    display: flex;
+    flex-direction: column;
+}
+
+.demo-app figure {
+    /* ELIMINAMI */
+    height: 200px;
+    background-color: pink;
+    margin-top: 20px;
+}
+
+.informative-section .card figure {
+    height: 100px;
+    background-color: pink;
+}
+
+
+/* INFORMATIVE SECTION RESPONSIVENESS */
+@media screen and (min-width:768px) {
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .col {
+        width: calc(100%/3);
+    }
+
+    .larger-col {
+        width: calc(100%/3*2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .row {
+        margin-left: -30px;
+        margin-right: -30px;
     }
 }
