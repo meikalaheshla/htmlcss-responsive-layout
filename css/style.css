@@ -126,7 +126,7 @@ section {
 
 }
 
-.card-txt {
+.informative-section .card-txt {
     /* eliminami */
     min-height: 100px;
     background-color: aquamarine;
@@ -161,13 +161,13 @@ section {
 
     }
 
-    .col {
+    .informative-section .col {
         width: calc(100%/3);
         /* eliminami */
 
     }
 
-    .larger-col {
+    .informative-section .larger-col {
         width: calc(100%/3*2);
 
     }
@@ -236,3 +236,50 @@ section {
 
 
 }
+
+
+
+/* TESTIOMONIAL SECTION  */
+
+.testimonial-txt {
+    padding: 0 15px;
+}
+
+.testimonials .card {
+    min-height: 200px;
+    background-color: var(--planning-sec-bg);
+    border-radius: 30px;
+}
+
+/* ELIMINAMI */
+.testimonials .card-txt {
+    min-height: 100px;
+    background-color: aquamarine;
+}
+
+.testimonials figure {
+    min-height: 100px;
+    background-color: pink;
+}
+
+/* TESTIMONIAL SECTION RESPONSIVENESS */
+
+@media screen and (min-width:768px) {
+    .testimonials .row {
+        flex-direction: column;
+    }
+
+    .testimonials .card {
+        display: flex;
+    }
+
+    .testimonials .card-txt {
+        width: 70%;
+    }
+
+    .testimonials figure {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:1200px) {}
