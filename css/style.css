@@ -4,3 +4,70 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* color */
+:root {
+    --header-bg: #0084fd;
+
+}
+
+
+/* UTILITY */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.debug .border {
+    border: 1px solid greenyellow;
+}
+
+
+/* HEADER */
+
+header {
+    height: 100px;
+    background-color: var(--header-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.fixed-bar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.fixed-bar figure {
+    height: 100%;
+    background-color: red;
+    width: 100px;
+    /*TOGLIMI */
+}
+
+.full-menu {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .fixed-bar {
+        padding: 0
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .full-menu {
+        display: flex;
+    }
+}
