@@ -18,7 +18,7 @@ main {
 :root {
     --header-bg: #0084fd;
     --card-blue: #b5ddff;
-    --planning-sec-bg: #9792e4;
+    --purple-sec-bg: #9792e4;
 
 }
 
@@ -202,7 +202,7 @@ section {
 
 /* PLANNING SECTION */
 .planning-section {
-    background-color: var(--planning-sec-bg);
+    background-color: var(--purple-sec-bg);
 }
 
 /* ELIMINAMI */
@@ -248,7 +248,7 @@ section {
 
 .testimonials .card {
     min-height: 200px;
-    background-color: var(--planning-sec-bg);
+    background-color: var(--purple-sec-bg);
     border-radius: 30px;
 }
 
@@ -288,7 +288,7 @@ section {
 
 /* BENEFITS SECTION */
 .benefits {
-    background-color: var(--planning-sec-bg);
+    background-color: var(--purple-sec-bg);
     text-align: center;
 }
 
@@ -348,4 +348,22 @@ section {
     .about-us .linkedin-col {
         width: 30%;
     }
+}
+
+
+/* GET STARTED SECTION */
+
+.get-started {
+    min-height: 200px;
+    background-color: var(--purple-sec-bg);
+    text-align: center;
+}
+
+/* FOOTER  */
+footer {
+    padding-top: 80px;
+    min-height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
