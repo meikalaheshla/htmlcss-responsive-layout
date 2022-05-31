@@ -10,16 +10,31 @@ body {
 }
 
 main {
-    padding-top: 150px;
+    padding-top: 50px;
 
+
+}
+
+a {
+    text-decoration: none;
 }
 
 /* color */
 :root {
+    /* HEADER */
     --header-bg: #0084fd;
-    --card-blue: #b5ddff;
-    --purple-sec-bg: #9792e4;
+    --navbar-txt-color: #ffffff;
+    --header-button: #ffffff;
+    --header-button-txt: #000000;
 
+    /* informative section */
+
+    --purple-sec-bg: #9792e4;
+    --informative-sec-card-color: #b5ddff;
+    --h2-informative-color: #0084fd;
+    --appstore-button-bg: #0084fd;
+    --appstore-button-txt: #ffffff;
+    --informative-card-txt: #5a6e7f;
 }
 
 
@@ -52,7 +67,8 @@ main {
 /* HEADER */
 
 header {
-    height: 100px;
+    padding-top: 15px;
+    height: 80px;
     background-color: var(--header-bg);
     position: fixed;
     top: 0;
@@ -61,8 +77,36 @@ header {
 
 }
 
+.fixed-bar ul {
+    list-style-type: none;
+    display: flex;
+
+
+}
+
+.fixed-bar li {
+    margin-left: 30px;
+}
+
+.fixed-bar a {
+    color: var(--navbar-txt-color);
+}
+
+.fixed-bar button {
+    color: var(--navbar-txt-color);
+    border: none;
+    background-color: transparent;
+}
+
+.fixed-bar .get-started-button {
+    color: black;
+    background-color: var(--header-button);
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
 .fixed-bar {
-    height: 100px;
+    font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,11 +114,8 @@ header {
 }
 
 .fixed-bar figure {
-    height: 100%;
-    /*TOGLIMI */
-    background-color: red;
-    /*TOGLIMI */
-    width: 100px;
+    text-align: center;
+
 }
 
 .full-menu {
@@ -117,7 +158,7 @@ section {
 
 /* INFORMATIVE-SECTION */
 .informative-section .card {
-    background-color: var(--card-blue);
+    background-color: var(--informative-sec-card-color);
     border-radius: 30px;
     text-align: center;
 }
@@ -127,10 +168,33 @@ section {
 
 }
 
-.informative-section .card-txt {
-    /* eliminami */
-    min-height: 100px;
-    background-color: aquamarine;
+.informative-section h2 {
+    color: var(--h2-informative-color);
+    margin-bottom: 30px;
+}
+
+.informative-section p {
+    line-height: 30px;
+    font-weight: bold;
+    color: #5a6e7f;
+    margin-bottom: 30px;
+}
+
+.informative-section .app-store-button {
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--appstore-button-bg);
+    color: var(--appstore-button-txt);
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+}
+
+.demo-app img {
+    width: 100%;
 }
 
 .demo-app {
@@ -139,17 +203,10 @@ section {
     padding-bottom: 0;
 }
 
-.informative-section .demo-app figure {
-    /* ELIMINAMI */
-    height: 200px;
-    background-color: pink;
 
-}
 
-.informative-section figure {
-    height: 100px;
-    background-color: pink;
-}
+
+
 
 
 /* INFORMATIVE SECTION RESPONSIVENESS */
@@ -163,13 +220,13 @@ section {
     }
 
     .informative-section .col {
-        width: calc(100%/3);
+        width: calc(100% / 3);
         /* eliminami */
 
     }
 
     .informative-section .larger-col {
-        width: calc(100%/3*2);
+        width: calc(100% / 3 * 2);
 
     }
 }
