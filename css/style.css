@@ -35,6 +35,13 @@ a {
     --appstore-button-bg: #0084fd;
     --appstore-button-txt: #ffffff;
     --informative-card-txt: #5a6e7f;
+
+
+    /* PLANNING SECTION */
+
+    --planning-txt-color: #ffffff;
+    --app-dev-text-color: #000000;
+    --arrow-button-bg: #9792e4;
 }
 
 
@@ -243,200 +250,266 @@ section {
     .informative-section figure {
         width: 65%;
     }
+}
 
 
 
-    @media screen and (min-width: 1200px) {
-        .row {
-            margin-left: -15px;
-            margin-right: -15px;
-        }
+@media screen and (min-width: 1200px) {
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
 
-        .informative-section .demo-app {
-            display: flex;
-            flex-direction: row;
-
-        }
-
-        .demo-app .card-txt {
-            width: 50%;
-        }
-
-        .informative-section .demo-app figure {
-            width: 50%;
-            height: 80%;
-            align-self: flex-end;
-
-        }
+    .informative-section .demo-app {
+        display: flex;
+        flex-direction: row;
 
     }
 
-
-
-    /* PLANNING SECTION */
-    .planning-section {
-        background-color: var(--purple-sec-bg);
+    .demo-app .card-txt {
+        width: 50%;
     }
 
-    /* ELIMINAMI */
-    .planning-txt {
-        height: 150px;
-
-    }
-
-    .planning-section figure {
-        min-height: 150px;
-        background-color: pink;
-    }
-
-    .planning-section .card {
-        min-height: 250px;
-        background-color: white;
-        border-radius: 50px;
-    }
-
-    /* PLANNING SECTION RESPONSIVENESS */
-
-    @media screen and (min-width:768px) {
-        .planning-section .col {
-            width: 100%;
-        }
-    }
-
-    @media screen and (min-width:1200px) {
-        .planning-section .col {
-            width: calc(100%/2);
-        }
-
+    .informative-section .demo-app figure {
+        width: 50%;
+        height: 80%;
+        align-self: flex-end;
 
     }
 
+}
 
 
-    /* TESTIOMONIAL SECTION  */
 
-    .testimonial-txt {
-        padding: 0 15px;
+/* PLANNING SECTION */
+
+
+.planning-section {
+    background-color: var(--purple-sec-bg);
+}
+
+
+
+.planning-section figure {
+    width: 100%;
+    margin-bottom: 80px;
+
+
+}
+
+.planning-section .planning-txt {
+    color: var(--planning-txt-color);
+}
+
+.planning-section .planning-txt h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.planning-section p {
+    line-height: 30px;
+}
+
+.planning-section img {
+    width: 100%;
+    display: block;
+}
+
+/* APP CARD */
+
+.planning-section .app-dev-card {
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px;
+
+}
+
+.app-dev-card img {
+    margin-bottom: 30px;
+}
+
+.app-dev-card h2 {
+    margin-bottom: 30px;
+}
+
+.app-dev-card a {
+    display: block;
+    background-color: var(--arrow-button-bg);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 30px auto;
+    color: var(--app-dev-text-color);
+}
+
+
+
+/* PLANNING SECTION RESPONSIVENESS */
+
+@media screen and (min-width:768px) {
+    .planning-section .col {
+        width: 100%;
+    }
+
+    .planning-section .planning-txt h2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .planning-section .col {
+        width: calc(100%/2);
+        padding: 50px;
+
+    }
+
+    .planning-section .planning-txt h2 {
+        font-size: 40px;
+    }
+
+    .planning-section .row {
+        align-items: baseline;
+    }
+
+    .planning-section .app-dev-card {
+        height: 670px;
+    }
+
+    .planning-section .app-dev-card img {
+        height: 50%;
+        width: auto;
+        margin: 30px auto;
+    }
+}
+
+
+
+/* TESTIOMONIAL SECTION  */
+
+.testimonial-txt {
+    padding: 0 15px;
+}
+
+.testimonials .card {
+    min-height: 200px;
+    background-color: var(--purple-sec-bg);
+    border-radius: 30px;
+}
+
+/* ELIMINAMI */
+.testimonials .card-txt {
+    min-height: 100px;
+    background-color: aquamarine;
+}
+
+.testimonials figure {
+    min-height: 100px;
+    background-color: pink;
+}
+
+/* TESTIMONIAL SECTION RESPONSIVENESS */
+
+@media screen and (min-width:768px) {
+    .testimonials .row {
+        flex-direction: column;
     }
 
     .testimonials .card {
-        min-height: 200px;
-        background-color: var(--purple-sec-bg);
-        border-radius: 30px;
+        display: flex;
     }
 
-    /* ELIMINAMI */
     .testimonials .card-txt {
-        min-height: 100px;
-        background-color: aquamarine;
+        width: 70%;
     }
 
     .testimonials figure {
-        min-height: 100px;
-        background-color: pink;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:1200px) {}
+
+
+/* BENEFITS SECTION */
+.benefits {
+    background-color: var(--purple-sec-bg);
+    text-align: center;
+}
+
+.benefit-card {
+    min-height: 200px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+/* BENEFIT SECTION RESPONSIVENESS */
+
+
+@media screen and (min-width:768px) {
+
+
+    .benefits .row {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    /* TESTIMONIAL SECTION RESPONSIVENESS */
+    .benefits .col {
+        width: calc(100%/2);
+    }
+}
 
-    @media screen and (min-width:768px) {
-        .testimonials .row {
-            flex-direction: column;
-        }
+@media screen and (min-width:1200px) {
+    .benefits .col {
+        width: calc(100%/3);
+    }
+}
 
-        .testimonials .card {
-            display: flex;
-        }
 
-        .testimonials .card-txt {
-            width: 70%;
-        }
 
-        .testimonials figure {
-            width: 30%;
-        }
+/* ABOUT US SECTION */
+
+/* ELIMINAMI */
+.about-us .sample-txt {
+    height: 300px;
+    background-color: aquamarine;
+}
+
+.about-us .linkedin-menager {
+    height: 150px;
+    background-color: pink;
+
+
+}
+
+/* ABOUT US RESPONSIVENESS */
+
+@media screen and (min-width:768px) {
+    .about-us .text-col {
+        width: 70%;
     }
 
-    @media screen and (min-width:1200px) {}
-
-
-    /* BENEFITS SECTION */
-    .benefits {
-        background-color: var(--purple-sec-bg);
-        text-align: center;
+    .about-us .linkedin-col {
+        width: 30%;
     }
-
-    .benefit-card {
-        min-height: 200px;
-        background-color: white;
-        border-radius: 30px;
-    }
+}
 
 
-    /* BENEFIT SECTION RESPONSIVENESS */
+/* GET STARTED SECTION */
 
+.get-started {
+    min-height: 200px;
+    background-color: var(--purple-sec-bg);
+    text-align: center;
+}
 
-    @media screen and (min-width:768px) {
-
-
-        .benefits .row {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        .benefits .col {
-            width: calc(100%/2);
-        }
-    }
-
-    @media screen and (min-width:1200px) {
-        .benefits .col {
-            width: calc(100%/3);
-        }
-    }
-
-
-
-    /* ABOUT US SECTION */
-
-    /* ELIMINAMI */
-    .about-us .sample-txt {
-        height: 300px;
-        background-color: aquamarine;
-    }
-
-    .about-us .linkedin-menager {
-        height: 150px;
-        background-color: pink;
-
-
-    }
-
-    /* ABOUT US RESPONSIVENESS */
-
-    @media screen and (min-width:768px) {
-        .about-us .text-col {
-            width: 70%;
-        }
-
-        .about-us .linkedin-col {
-            width: 30%;
-        }
-    }
-
-
-    /* GET STARTED SECTION */
-
-    .get-started {
-        min-height: 200px;
-        background-color: var(--purple-sec-bg);
-        text-align: center;
-    }
-
-    /* FOOTER  */
-    footer {
-        padding-top: 80px;
-        min-height: 200px;
-        background-color: black;
-        color: white;
-        text-align: center;
-    }
+/* FOOTER  */
+footer {
+    padding-top: 80px;
+    min-height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
