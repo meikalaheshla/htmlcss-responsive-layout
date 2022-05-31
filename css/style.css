@@ -15,6 +15,10 @@ main {
 
 }
 
+p {
+    line-height: 30px;
+}
+
 a {
     text-decoration: none;
 }
@@ -42,6 +46,11 @@ a {
     --planning-txt-color: #ffffff;
     --app-dev-text-color: #000000;
     --arrow-button-bg: #9792e4;
+
+    /* TESTIMONIAL SECTION */
+    --testimonials-card-bg-color: #9792e4;
+    --testimonials-card-txt-color: #ffffff;
+    --testimonial-title-color: #9792e4;
 }
 
 
@@ -387,27 +396,68 @@ section {
 
 
 /* TESTIOMONIAL SECTION  */
-
 .testimonial-txt {
     padding: 0 15px;
+    text-align: center;
 }
 
+.testimonial-txt h2 {
+    font-size: 40px;
+    color: var(--testimonial-title-color);
+    margin-bottom: 30px
+}
+
+
+
+.testimonials figure {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.testimonials .first-testimonial {
+    background-image: url(../img/testimonial1.jpg);
+
+}
+
+.testimonials .second-testimonial {
+    background-image: url(../img/testimonial2.jpg);
+}
+
+.testimonials .third-testimonial {
+    background-image: url(../img/testimonial3.jpg);
+}
+
+
+
+
+
+
 .testimonials .card {
+    text-align: center;
     min-height: 200px;
-    background-color: var(--purple-sec-bg);
+    background-color: var(--testimonials-card-bg-color);
     border-radius: 30px;
+    color: var(--testimonials-card-txt-color);
+}
+
+.testimonials p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonials .testimonial-name {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 /* ELIMINAMI */
-.testimonials .card-txt {
-    min-height: 100px;
-    background-color: aquamarine;
-}
 
-.testimonials figure {
-    min-height: 100px;
-    background-color: pink;
-}
 
 /* TESTIMONIAL SECTION RESPONSIVENESS */
 
@@ -418,18 +468,25 @@ section {
 
     .testimonials .card {
         display: flex;
+        align-items: center;
     }
 
     .testimonials .card-txt {
         width: 70%;
+        text-align: justify;
     }
 
-    .testimonials figure {
+    .testimonials .testimonial-pic-box {
         width: 30%;
+        margin-right: 20px;
     }
 }
 
-@media screen and (min-width:1200px) {}
+@media screen and (min-width:1200px) {
+    .testimonials figure {
+        margin-right: 60px;
+    }
+}
 
 
 /* BENEFITS SECTION */
