@@ -60,7 +60,7 @@ a {
     /* TOGLIMI? */
     min-height: 300px;
     padding: 15px;
-    background-color: green;
+
 }
 
 
@@ -177,6 +177,11 @@ section {
     line-height: 30px;
     font-weight: bold;
     color: #5a6e7f;
+    margin-bottom: 30px;
+}
+
+.informative-section .card-icon {
+    color: var(--h2-informative-color);
     margin-bottom: 30px;
 }
 
