@@ -51,6 +51,15 @@ a {
     --testimonials-card-bg-color: #9792e4;
     --testimonials-card-txt-color: #ffffff;
     --testimonial-title-color: #9792e4;
+
+    /* BENEFIT SECTION */
+    --benefit-main-title: #ffffff;
+    --benefit-card-title: #9792e4;
+    --benefit-card-bg: #ffffff;
+    --benefit-card-txt: #5a6e7f;
+    --benefit-card-btn-bg: #9792e4;
+    --benefit-card-btn-txt: #ffffff;
+
 }
 
 
@@ -490,15 +499,56 @@ section {
 
 
 /* BENEFITS SECTION */
+
 .benefits {
     background-color: var(--purple-sec-bg);
     text-align: center;
 }
 
+.benefits h2 {
+    color: var(--benefit-main-title);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* BENEFIT CARDS DETAILS */
+
 .benefit-card {
-    min-height: 200px;
-    background-color: white;
+    background-color: var(--benefit-card-bg);
     border-radius: 30px;
+    text-align: justify;
+}
+
+.benefit-card h2,
+.benefit-card h3 {
+    color: var(--benefit-card-title);
+}
+
+.benefit-card h2 {
+    font-size: 50px;
+}
+
+.benefit-card h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+
+}
+
+.benefit-card p {
+    color: var(--benefit-card-txt);
+    margin-bottom: 20px;
+}
+
+.benefit-card a {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    width: 150px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: var(--benefit-card-btn-txt);
+    background-color: var(--benefit-card-btn-bg);
 }
 
 
@@ -506,7 +556,13 @@ section {
 
 
 @media screen and (min-width:768px) {
+    .benefits h2 {
+        font-size: 50px;
+    }
 
+    .benefit-card h2 {
+        font-size: 70px;
+    }
 
     .benefits .row {
         flex-direction: row;
