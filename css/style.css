@@ -205,9 +205,10 @@ section {
 }
 
 .demo-app img {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: block;
+    margin: 0 auto;
 }
 
 
@@ -263,8 +264,9 @@ section {
 
         .informative-section .demo-app figure {
             width: 50%;
-            height: 100%;
-            margin-bottom: -30px;
+            height: 80%;
+            align-self: flex-end;
+
         }
 
     }
