@@ -59,7 +59,11 @@ a {
     --benefit-card-txt: #5a6e7f;
     --benefit-card-btn-bg: #9792e4;
     --benefit-card-btn-txt: #ffffff;
-
+    /* ABOUT US SECTION */
+    --aboutus-title-color: #9792e4;
+    --linkedin-manager-txt: #9792e4;
+    --linkedin-button-bg: #9792e4;
+    --linkedin-butto-txt: #ffffff;
 }
 
 
@@ -82,8 +86,7 @@ a {
 }
 
 .col {
-    /* TOGLIMI? */
-    min-height: 300px;
+
     padding: 15px;
 
 }
@@ -256,7 +259,7 @@ section {
 
     .informative-section .col {
         width: calc(100% / 3);
-        /* eliminami */
+
 
     }
 
@@ -465,7 +468,7 @@ section {
     font-weight: bold;
 }
 
-/* ELIMINAMI */
+
 
 
 /* TESTIMONIAL SECTION RESPONSIVENESS */
@@ -584,28 +587,68 @@ section {
 
 /* ABOUT US SECTION */
 
-/* ELIMINAMI */
-.about-us .sample-txt {
-    height: 300px;
-    background-color: aquamarine;
-}
 
-.about-us .linkedin-menager {
-    height: 150px;
-    background-color: pink;
-
+.about-us h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: var(--aboutus-title-color);
 
 }
+
+.about-us p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.about-us .menager-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(../img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: end;
+    color: var(--aboutus-title-color);
+    margin-bottom: 30px;
+}
+
+.linkedin-menager h3 {
+    color: var(--aboutus-title-color);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.linkedin-menager a {
+    color: var(--appstore-button-txt);
+    background-color: var(--aboutus-title-color);
+    /* display: block; */
+    padding: 8px 15px;
+    border-radius: 30px;
+
+}
+
+.linkedin-menager .fa-linkedin {
+    margin-right: 5px;
+}
+
+
 
 /* ABOUT US RESPONSIVENESS */
 
 @media screen and (min-width:768px) {
     .about-us .text-col {
-        width: 70%;
+        width: 60%;
+        padding: 40px;
     }
 
     .about-us .linkedin-col {
-        width: 30%;
+        width: 40%;
+        padding: 40px;
+    }
+
+    .about-us h2 {
+        font-size: 70px;
     }
 }
 
