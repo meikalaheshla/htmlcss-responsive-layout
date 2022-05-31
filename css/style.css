@@ -64,6 +64,13 @@ a {
     --linkedin-manager-txt: #9792e4;
     --linkedin-button-bg: #9792e4;
     --linkedin-butto-txt: #ffffff;
+
+    /* GET STARTED SECTION */
+    --gs-small-title-color: #d5d4f4;
+    --gs-big-title-color: #fdc15f;
+    --gs-txt-color: #ffffff;
+    --gs-button-bg: #ffffff;
+    --gs-button-txt: #9792e4;
 }
 
 
@@ -656,10 +663,62 @@ section {
 /* GET STARTED SECTION */
 
 .get-started {
-    min-height: 200px;
     background-color: var(--purple-sec-bg);
     text-align: center;
+    color: var(--gs-txt-color);
 }
+
+.get-started .small-text-box {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.get-started .small-title {
+    color: var(--gs-small-title-color);
+    font-size: 18px;
+    display: inline-block;
+    margin: 30px;
+}
+
+.get-started h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+.get-started h2 {
+    color: var(--gs-big-title-color);
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.get-started a {
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    color: var(--gs-button-txt);
+    background-color: var(--gs-button-bg);
+    border-radius: 40px;
+}
+
+/* GET STARTED RESPONSIVE */
+@media screen and (min-width:768px) {
+    .get-started h3 {
+        font-size: 50px;
+    }
+
+    .get-started h2 {
+        font-size: 90px;
+    }
+
+    .get-started a {
+        padding: 30px;
+    }
+}
+
 
 /* FOOTER  */
 footer {
